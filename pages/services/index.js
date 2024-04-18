@@ -7,13 +7,13 @@ import Circles from '../../components/Circles';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';
 
+// React component
 const Services = () => {
   return (
     <div className='h-full bg-primary/30 py-36 flex items-center'>
       <Circles />
       <div className='container mx-auto'>
         <div className='flex flex-col xl:flex-row gap-x-8'>
-          {/* text */}
           <div className='text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0'>
             <motion.h2
               variants={fadeIn('up', 0.2)}
@@ -31,17 +31,16 @@ const Services = () => {
               exit='hidden'
               className='mb-4 max-w-[400px] mx-auto lg:mx-0'
             >
-              I specialize in vulnerability scanning and ethical hacking to proactively identify and address security vulnerabilities, coupled with robust incident response services to swiftly manage cyber incidents.  Additionally, I ensure comprehensive protection of endpoints and cloud-based systems, enhancing security across both physical and digital platforms to maintain the integrity and confidentiality of vital data.
+              I specialize in vulnerability scanning and ethical hacking to proactively identify and address security vulnerabilities.  Additionally, I ensure comprehensive protection of endpoints and cloud-based systems, enhancing security across both physical and digital platforms to maintain the integrity and confidentiality of vital data.
             </motion.p>
           </div>
-
-          {/* slider */}
+          {/* Scrollable slider on mobile */}
           <motion.div
             variants={fadeIn('down', 0.6)}
             initial='hidden'
             animate='show'
             exit='hidden'
-            className='w-full xl:max-w-[65%]'
+            className='w-full xl:max-w-[65%] scrollable-slider' // Added scrollable-slider class
           >
             <ServiceSlider />
           </motion.div>

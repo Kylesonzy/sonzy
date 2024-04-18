@@ -86,6 +86,19 @@
     color: red; /* Set the text color */
   }
   
-  
+  @media (max-width: 768px) {  /* Adjust this breakpoint as needed */
+    .scrollable-slider {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory; /* Optional: enhances the scroll experience */
+      -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS devices */
+    }
+    .service-slide {
+      scroll-snap-align: start; /* Optional: align slides nicely when scrolling */
+      flex-shrink: 0; /* Prevent flex items from shrinking in a flex container */
+      width: 100%; /* Adjust width as needed */
+      margin-right: 10px; /* Adjust spacing between slides */
+    }
+  }
   
 }
