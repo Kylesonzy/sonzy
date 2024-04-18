@@ -86,19 +86,25 @@
     color: red; /* Set the text color */
   }
   
-  @media (max-width: 768px) {  /* Adjust this breakpoint as needed */
-    .scrollable-slider {
-      display: flex;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory; /* Optional: enhances the scroll experience */
-      -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS devices */
-    }
-    .service-slide {
-      scroll-snap-align: start; /* Optional: align slides nicely when scrolling */
-      flex-shrink: 0; /* Prevent flex items from shrinking in a flex container */
-      width: 100%; /* Adjust width as needed */
-      margin-right: 10px; /* Adjust spacing between slides */
-    }
+/* Stylesheet adjustments for vertical scrolling */
+@media (max-width: 768px) {
+  .scrollable-slider {
+    display: block;  /* Or 'flex' with 'flex-direction: column' if needed */
+    overflow-y: auto;  /* Enable vertical scrolling */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    scroll-snap-type: y mandatory; /* Optional: Ensures elements snap to place vertically */
+    scrollbar-width: none; /* Hides scrollbar on Firefox */
+    -ms-overflow-style: none;  /* Hides scrollbar on IE and Edge */
   }
-  
+
+  .scrollable-slider::-webkit-scrollbar {
+    display: none; /* Hides scrollbar on WebKit browsers */
+  }
+
+  .service-slide {
+    scroll-snap-align: start;
+    width: 100%;  /* Adjust width to fill the container */
+    margin-bottom: 20px; /* Space between items, adjust as needed */
+  }
+}
 }

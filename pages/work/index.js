@@ -31,7 +31,7 @@ const Work = () => {
               exit='hidden'
               className='mb-4 max-w-[400px] mx-auto lg:mx-0'
             >
-              I am continually updating my cybersecurity knowledge through extensive use of advanced tools and engagement in diverse projects. This ongoing learning ensures that I stay at the forefront of industry developments and maintain the highest standards in cyber defense and security analysis.
+              I am continually updating my cybersecurity knowledge through extensive use of advanced tools and engagement in diverse projects. This ongoing learning ensures that I stay at the forefront of industry developments.
             </motion.p>
           </div>
 

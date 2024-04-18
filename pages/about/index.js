@@ -171,7 +171,7 @@ const About = () => {
             exit='hidden'
             className='h2'
           >
-           Securing the<span className='text-accent'> future, </span> one hack at a time.
+           Securing the<span className='text-accent'> future. </span> 
           </motion.h2>
           <motion.p
             variants={fadeIn('right', 0.4)}
@@ -180,7 +180,7 @@ const About = () => {
             exit='hidden'
             className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'
           >        
-I started my ethical hacking journey three years ago when I was just 17 years old. Fascinated by the challenges and opportunities in cybersecurity, I delved into ethical hacking and penetration testing. This path not only offered an exciting glimpse into the complexities of securing digital infrastructures but also allowed me to develop a skill set tailored to safeguarding information in an era where data breaches are all too common. 
+I started my ethical hacking journey three years ago when I was just 17 years old. Fascinated by the challenges and opportunities in cybersecurity, I delved into ethical hacking and penetration testing. 
           </motion.p>
           {/* counters */}
           <motion.div

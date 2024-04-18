@@ -5,14 +5,14 @@ export const testimonialSlider = [
     name: 'Aaron Park',
     position: 'Customer',
     message:
-      ' Kyle helped me resolve my DNS issues by identifying and correcting misconfigurations, ensuring my domain names resolved correctly. He also improved my network security by expertly configuring my firewall settings to better protect against unauthorized access.',
+      ' Kyle helped me resolve my DNS issues by identifying and correcting misconfigurations, ensuring my domain names resolved correctly.',
   },
   {
     image: '/jordan.jpg',
     name: 'Jordan Tran',
     position: 'Friend',
     message:
-      'Kyle assisted me in filtering packets on my system after it was infiltrated, helping to identify and block suspicious traffic. His expertise ensured that my network was safeguarded against further unauthorized access.',
+      'Kyle assisted me in filtering packets on my system after it was infiltrated, helping to identify and block suspicious traffic. His expertise ensured that my network was safeguarded.',
   },
   {
     image: '/emily.png',

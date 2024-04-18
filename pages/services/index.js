@@ -31,7 +31,7 @@ const Services = () => {
               exit='hidden'
               className='mb-4 max-w-[400px] mx-auto lg:mx-0'
             >
-              I specialize in vulnerability scanning and ethical hacking to proactively identify and address security vulnerabilities.  Additionally, I ensure comprehensive protection of endpoints and cloud-based systems, enhancing security across both physical and digital platforms to maintain the integrity and confidentiality of vital data.
+              I specialize in vulnerability scanning and ethical hacking to proactively identify and address security vulnerabilities. I ensure protection of endpoints and cloud-based systems, enhancing security across both physical and digital platforms.
             </motion.p>
           </div>
           {/* Scrollable slider on mobile */}
