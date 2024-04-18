@@ -25,7 +25,7 @@ const Home = () => {
             exit='hidden'
             className='h1'
           >
-            Hello, <br /> I'm
+            Hello, <br /> Im
 <span className="typewriter1"> Kyle Kim</span>
 
             
@@ -38,8 +38,9 @@ const Home = () => {
   exit='hidden'
   className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 text-lg md:text-xl font-medium text-white'
 >
-  a future cyber security analyst & penetration tester
+  a future cyber security analyst &amp; penetration tester
 </motion.p>
+
 
     
           <div className='flex justify-center xl:hidden relative'>
