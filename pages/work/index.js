@@ -22,7 +22,7 @@ const Work = () => {
               exit='hidden'
               className='h2 xl:mt-12'
             >
-              My work <span className='text-accent'>.</span>
+              My Cyber <span className='text-accent'>Work.</span>
             </motion.h2>
             <motion.p
               variants={fadeIn('up', 0.4)}
@@ -31,8 +31,7 @@ const Work = () => {
               exit='hidden'
               className='mb-4 max-w-[400px] mx-auto lg:mx-0'
             >
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. A
-              eveniet dignissimos distinctio tempore harum laudantium.
+              I am continually updating my cybersecurity knowledge through extensive use of advanced tools and engagement in diverse projects. This ongoing learning ensures that I stay at the forefront of industry developments and maintain the highest standards in cyber defense and security analysis.
             </motion.p>
           </div>
 

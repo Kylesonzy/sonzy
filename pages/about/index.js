@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
-
+import { CgTerminal } from "react-icons/cg";
+import { RiRedPacketLine } from "react-icons/ri";
+import { CgCloud } from "react-icons/cg";
+import { PiFileSqlThin } from "react-icons/pi";
+import { GrGithub } from "react-icons/gr";
 // icons
 import {
   FaHtml5,
@@ -8,6 +12,9 @@ import {
   FaReact,
   FaWordpress,
   FaFigma,
+  FaCoins,
+  FaExpeditedssl,
+  FaLinux,
 } from 'react-icons/fa';
 
 import {
@@ -35,8 +42,17 @@ export const aboutData = [
         ],
       },
       {
-        title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        title: 'Cyber Security Tools',
+        icons: [
+          <CgTerminal />,
+          <CgCloud />,
+          <RiRedPacketLine />,
+          <FaCoins />,
+          <FaExpeditedssl />,
+          <PiFileSqlThin />,
+          <FaLinux />,
+          <GrGithub />,
+        ]
       },
     ],
   },
@@ -44,12 +60,16 @@ export const aboutData = [
     title: 'awards',
     info: [
       {
-        title: 'Webby Awards - Honoree',
-        stage: '2011 - 2012',
+        title: 'UVA Hackathon Participant',
+        stage: 'March 2024',
       },
       {
-        title: 'Adobe Design Achievement Awards - Finalist',
-        stage: '2009 - 2010',
+        title: 'Contribution to Cybersecurity Education Award',
+        stage: '2023',
+      },
+      {
+        title: 'Excellence in Cyber Defense Award - Honoree',
+        stage: 'Septmeber 2022',
       },
     ],
   },
@@ -57,33 +77,46 @@ export const aboutData = [
     title: 'experience',
     info: [
       {
-        title: 'UX/UI Designer - XYZ Company',
-        stage: '2012 - 2023',
+        title: 'Volunteer Cybersecurity Consultant, NPO',
+        stage: '2024 - Present',
       },
       {
-        title: 'Web Developer - ABC Agency',
-        stage: '2010 - 2012',
+        title: 'Hack The Box CTF Competitor',
+        stage: '2024 - Present',
       },
       {
-        title: 'Intern - DEF Corporation',
-        stage: '2008 - 2010',
+        title: 'Research Analyzer, SANS',
+        stage: '2024 - Present',
       },
+      {
+        title: 'Blue Team Malware Analysis',
+        stage: '2023 - 2023',
+      },
+      {
+        title: 'Web Developer - PureSugarWax',
+        stage: '2022 - 2023',
+      },
+
     ],
   },
   {
     title: 'credentials',
     info: [
       {
-        title: 'Web Development - ABC University, LA, CA',
-        stage: '2011',
+        title: 'BAS in Cyber Security',
+        stage: 'Expected - 2025',
       },
       {
-        title: 'Computer Science Diploma - AV Technical Institute',
-        stage: '2009',
+        title: 'AS in Cyber Security',
+        stage: '2024',
       },
       {
-        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-        stage: '2006',
+        title: 'Network Administration CSC',
+        stage: 'Issued September 2023',
+      },
+      {
+        title: 'Business Information Tech CSC',
+        stage: 'Issued October 2023',
       },
     ],
   },
@@ -114,7 +147,7 @@ const About = () => {
         exit='hidden'
         className='hidden xl:flex absolute bottom-0 -left-[370px]'
       >
-        <Avatar />
+        
       </motion.div>
       <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6'>
         {/* text */}
@@ -126,8 +159,7 @@ const About = () => {
             exit='hidden'
             className='h2'
           >
-            Captivating <span className='text-accent'>stories</span> birth
-            magnificent designs.
+           Securing the<span className='text-accent'> future, </span> one hack at a time.
           </motion.h2>
           <motion.p
             variants={fadeIn('right', 0.4)}
@@ -135,10 +167,8 @@ const About = () => {
             animate='show'
             exit='hidden'
             className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'
-          >
-            10 years ago, I began freelancing as a developer. Since then, I've
-            done remote work for agencies, counsulted for startups, and
-            collaborated on digital products for business and consumer use.
+          >        
+I started my ethical hacking journey three years ago when I was just 17 years old. Fascinated by the challenges and opportunities in cybersecurity, I delved into ethical hacking and penetration testing. This path not only offered an exciting glimpse into the complexities of securing digital infrastructures but also allowed me to develop a skill set tailored to safeguarding information in an era where data breaches are all too common. 
           </motion.p>
           {/* counters */}
           <motion.div
@@ -152,7 +182,7 @@ const About = () => {
               {/* experience */}
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={10} duration={5} /> +
+                  <CountUp start={0} end={3} duration={5} /> +
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
                   Years of experience
@@ -161,25 +191,25 @@ const About = () => {
               {/* clients */}
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={250} duration={5} /> +
+                  <CountUp start={0} end={999} duration={5} /> +
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
-                  Satisfied clients
+                  Packets Captured
                 </div>
               </div>
               {/* projects */}
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={650} duration={5} /> +
+                  <CountUp start={0} end={35} duration={5} /> +
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
-                  Finished projects
+                  Pwned Machines
                 </div>
               </div>
               {/* awards */}
               <div className='relative flex-1'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={8} duration={5} /> +
+                  <CountUp start={0} end={3} duration={5} /> +
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
                   Winning awards

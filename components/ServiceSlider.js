@@ -23,28 +23,28 @@ import { FreeMode, Pagination } from 'swiper';
 export const serviceData = [
   {
     icon: <RxCrop />,
-    title: 'Branding',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Threat Identification',
+    description: 'Comprehensive scanning of systems to identify security vulnerabilities providing detailed reports.',
   },
   {
     icon: <RxPencil2 />,
-    title: 'Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Penetration Testing',
+    description: 'Simulated cyber attacks on systems, networks, or web applications to evaluate the exploitable vulnerabilities.',
   },
   {
     icon: <RxDesktop />,
-    title: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Web Security Testing',
+    description: 'Specialized testing focused on web applications to detect security threats such as SQL injection and XSS.',
   },
   {
     icon: <RxReader />,
-    title: 'Copywriting',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'IoT Security Services',
+    description: ' Security solutions tailored to protect devices and networks, addressing challenges posed by IoT configs.',
   },
   {
     icon: <RxRocket />,
-    title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Cloud Security',
+    description: 'Assessments of cloud platforms and environments to secure cloud-based infrastructure and data.',
   },
 ];
 

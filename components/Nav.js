@@ -1,4 +1,7 @@
 // icons
+
+import { FaGithub } from "react-icons/fa";
+
 import {
   HiHome,
   HiUser,
@@ -6,6 +9,7 @@ import {
   HiRectangleGroup,
   HiChatBubbleBottomCenterText,
   HiEnvelope,
+  
 } from 'react-icons/hi2';
 
 // nav data

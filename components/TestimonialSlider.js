@@ -1,25 +1,25 @@
 // testimonial slider data
 export const testimonialSlider = [
   {
-    image: '/t-avt-1.png',
-    name: 'Anne Smith',
+    image: '/aaronicon.png',
+    name: 'Aaron Park',
     position: 'Customer',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      ' Kyle helped me resolve my DNS issues by identifying and correcting misconfigurations, ensuring my domain names resolved correctly. He also improved my network security by expertly configuring my firewall settings to better protect against unauthorized access.',
   },
   {
-    image: '/t-avt-2.png',
-    name: 'Jane Doe',
-    position: 'Customer',
+    image: '/jordan.jpg',
+    name: 'Jordan Tran',
+    position: 'Friend',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      'Kyle assisted me in filtering packets on my system after it was infiltrated, helping to identify and block suspicious traffic. His expertise ensured that my network was safeguarded against further unauthorized access.',
   },
   {
-    image: '/t-avt-3.png',
-    name: 'Jhon Doe',
+    image: '/emily.png',
+    name: 'Emily',
     position: 'Customer',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      'Kyle helped me generate strong, secure passwords to fortify my accounts against potential breaches. His guidance was invaluable in enhancing my overall security posture.',
   },
 ];
 
