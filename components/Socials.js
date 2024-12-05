@@ -22,9 +22,6 @@ const Socials = () => {
       <Link href={'https://github.com/Kylesonzy'} className='hover:text-accent transition-all duration-300'>
         <FaGithub />
       </Link>
-      <Link href={'https://www.facebook.com/klipz.kay'} className='hover:text-accent transition-all duration-300'>
-        <RiFacebookLine />
-      </Link>
       <Link href={'https://www.instagram.com/kylesonzy/'} className='hover:text-accent transition-all duration-300'>
         <RiInstagramLine />
       </Link>

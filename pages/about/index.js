@@ -4,6 +4,7 @@ import { RiRedPacketLine } from "react-icons/ri";
 import { CgCloud } from "react-icons/cg";
 import { PiFileSqlThin } from "react-icons/pi";
 import { GrGithub } from "react-icons/gr";
+
 // icons
 import {
   FaHtml5,
@@ -80,18 +81,23 @@ export const aboutData = [
     title: 'experience',
     info: [
       {
-        title: 'Volunteer Cybersecurity Consultant, NPO',
-        stage: '2024 - Present',
+        title: 'Cybersecurity Analyst PureSugarWax',
+        stage: 'Aug 2024 to Dec 2024',
         icons: [], // Add icons if any, with keys
       },
       {
         title: 'Hack The Box CTF Competitor',
-        stage: '2024 - Present',
+        stage: 'Aug 2024 to Present',
+        icons: [], // Add icons if any, with keys
+      },
+      {
+        title: 'Volunteer Cybersecurity Consultant, NPO',
+        stage: 'June 2024 to July 2024',
         icons: [], // Add icons if any, with keys
       },
       {
         title: 'Research Analyzer, SANS',
-        stage: '2024 - Present',
+        stage: 'Oct 2024 to Present',
         icons: [], // Add icons if any, with keys
       },
       {
@@ -100,8 +106,8 @@ export const aboutData = [
         icons: [], // Add icons if any, with keys
       },
       {
-        title: 'Web Developer - PureSugarWax',
-        stage: '2022 - 2023',
+        title: 'Web Developer PureSugarWax',
+        stage: '2022 to 2023',
         icons: [], // Add icons if any, with keys
       },
     ],
@@ -110,24 +116,34 @@ export const aboutData = [
     title: 'credentials',
     info: [
       {
+        title: 'MS in Applied Information Technology',
+        stage: 'Spring 2026',
+        icons: [], 
+      },
+      {
         title: 'BAS in Cyber Security',
-        stage: 'Expected - 2025',
-        icons: [], // Add icons if any, with keys
+        stage: 'Spring 2025',
+        icons: [], 
+      },
+      {
+        title: 'Google Cybersecurity Professional Certificate',
+        stage: 'Dec 2024',
+        icons: [], 
       },
       {
         title: 'AS in Cyber Security',
-        stage: '2024',
-        icons: [], // Add icons if any, with keys
+        stage: 'Dec 2024',
+        icons: [],
       },
       {
         title: 'Network Administration CSC',
         stage: 'Issued September 2023',
-        icons: [], // Add icons if any, with keys
+        icons: [], 
       },
       {
         title: 'Business Information Tech CSC',
         stage: 'Issued October 2023',
-        icons: [], // Add icons if any, with keys
+        icons: [], 
       },
     ],
   },
