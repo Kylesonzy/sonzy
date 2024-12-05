@@ -1,4 +1,3 @@
-// import swiper react components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // import swiper styles
@@ -56,7 +55,6 @@ const ServiceSlider = () => {
           slidesPerView: 1,
           spaceBetween: 15,
         },
-
         640: {
           slidesPerView: 3,
           spaceBetween: 15,
@@ -75,12 +73,10 @@ const ServiceSlider = () => {
             <div className='bg-[rgba(65,47,123,0.15)] h-max rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300'>
               {/* icon */}
               <div className='text-4xl text-accent mb-4'>{item.icon}</div>
-              {/* title & desc */}
+              {/* title & description */}
               <div className='mb-8'>
-                <div className='mb-2 text-lg'>{item.title}</div>
-                <p className='max-w-[350px] leading-normal'>
-                  {item.description}
-                </p>
+                <div className='mb-2 text-lg text-black'>{item.title}</div> {/* Title text is now black */}
+                <p className='max-w-[350px] leading-normal text-black'>{item.description}</p> {/* Description text is now black */}
               </div>
               {/* arrow */}
               <div className='text-3xl'>
