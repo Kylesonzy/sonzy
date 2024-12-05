@@ -14,15 +14,14 @@ const Testimonials = () => {
       <div className='container mx-auto h-full flex flex-col justify-center relative z-10'>
         {/* title */}
         <motion.h2
-  variants={fadeIn('up', 0.2)}
-  initial='hidden'
-  animate='show'
-  exit='hidden'
-  className='h2 mb-8 xl:mb-0 text-black mt-4 sm:mt-6'
->
-  What clients <span className='text-accent'>say.</span>
-</motion.h2>
-
+          variants={fadeIn('up', 0.2)}
+          initial='hidden'
+          animate='show'
+          exit='hidden'
+          className='h2 mb-2 xl:mb-0 text-black' 
+        >
+          What clients <span className='text-accent'>say.</span>
+        </motion.h2>
         {/* slider */}
         <motion.div
           variants={fadeIn('up', 0.4)}
