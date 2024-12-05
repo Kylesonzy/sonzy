@@ -15,7 +15,7 @@ export const testimonialSlider = [
     name: "Aaron Park",
     position: "Customer",
     message:
-      " Kyle helped me resolve my DNS issues by identifying and correcting misconfigurations, ensuring my domain names resolved correctly.",
+      " Kyle helped me resolve my DNS issues by identifying and correcting misconfigurations, ensuring my domain names are correct.",
   },
   {
     image: "/hamad.jpg",
@@ -50,7 +50,7 @@ export const testimonialSlider = [
     name: "Emily",
     position: "Customer",
     message:
-      "Kyle helped me generate strong, secure passwords to fortify my accounts against potential breaches.",
+      "Kyle helped me generate strong, secure passwords to help against breaches.",
   },
 ];
 
