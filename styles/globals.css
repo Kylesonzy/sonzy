@@ -5,6 +5,7 @@
 .translate-z-0 {
   transform: translateZ(0px);
 }
+
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets
   .swiper-pagination-bullet {
@@ -18,6 +19,10 @@
   color: #f13024;
 }
 
+.swiper-pagination-horizontal.swiper-pagination-bullets {
+  bottom: -10px; /* Adjusted this to shift the bullets downward */
+}
+
 @layer base {
   body {
     @apply overflow-hidden leading-relaxed;
@@ -27,15 +32,15 @@
   }
   .h1 {
     @apply text-[35px] leading-tight md:text-[60px] md:leading-[1.3] mb-8 font-semibold;
-    z-index: 10; 
+    z-index: 10;
   }
-  
+
   .h2 {
     @apply text-[35px] leading-tight md:text-[54px] md:leading-[1.3] mb-4 font-semibold;
   }
   p {
     @apply leading-[1.8] text-white/60 font-light;
-    z-index: 10; 
+    z-index: 10;
   }
   .btn,
   .input {
@@ -49,7 +54,7 @@
     @apply bg-transparent outline-none focus:ring-1 focus:ring-accent border border-white/20 placeholder:text-white/30 placeholder:font-light;
   }
   .textarea {
-    @apply w-full h-[180px] p-6 capitalize rounded-lg resize-none; 
+    @apply w-full h-[180px] p-6 capitalize rounded-lg resize-none;
   }
 
   @keyframes fadeInTopToBottom {
@@ -62,21 +67,30 @@
       transform: translateY(0);
     }
   }
-  
+
   .fade-in-top-to-bottom {
     animation: fadeInTopToBottom 4s ease-out forwards;
   }
-  
+
   @keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
   }
-  
+
   @keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: red; }
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: red;
+    }
   }
-  
+
   .typewriter1 {
     font-family: sans-serif;
     overflow: hidden;
@@ -85,26 +99,26 @@
     animation: typing 5s steps(8, end), blink-caret 0.75s step-end infinite;
     color: red; /* Set the text color */
   }
-  
-/* Stylesheet adjustments for vertical scrolling */
-@media (max-width: 768px) {
-  .scrollable-slider {
-    display: block;  /* Or 'flex' with 'flex-direction: column' if needed */
-    overflow-y: auto;  /* Enable vertical scrolling */
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-    scroll-snap-type: y mandatory; /* Optional: Ensures elements snap to place vertically */
-    scrollbar-width: none; /* Hides scrollbar on Firefox */
-    -ms-overflow-style: none;  /* Hides scrollbar on IE and Edge */
-  }
 
-  .scrollable-slider::-webkit-scrollbar {
-    display: none; /* Hides scrollbar on WebKit browsers */
-  }
+  /* Stylesheet adjustments for vertical scrolling */
+  @media (max-width: 768px) {
+    .scrollable-slider {
+      display: block; /* Or 'flex' with 'flex-direction: column' if needed */
+      overflow-y: auto; /* Enable vertical scrolling */
+      -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+      scroll-snap-type: y mandatory; /* Optional: Ensures elements snap to place vertically */
+      scrollbar-width: none; /* Hides scrollbar on Firefox */
+      -ms-overflow-style: none; /* Hides scrollbar on IE and Edge */
+    }
 
-  .service-slide {
-    scroll-snap-align: start;
-    width: 100%;  /* Adjust width to fill the container */
-    margin-bottom: 20px; /* Space between items, adjust as needed */
+    .scrollable-slider::-webkit-scrollbar {
+      display: none; /* Hides scrollbar on WebKit browsers */
+    }
+
+    .service-slide {
+      scroll-snap-align: start;
+      width: 100%; /* Adjust width to fill the container */
+      margin-bottom: 20px; /* Space between items, adjust as needed */
+    }
   }
-}
 }

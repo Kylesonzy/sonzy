@@ -199,7 +199,7 @@ const About = () => {
         years old. Fascinated by the challenges and opportunities in cybersecurity,
         I delved into ethical hacking and penetration testing.
       </motion.p>
-      {/* Counters Section */}
+
       {/* Counters Section */}
 <motion.div
   variants={fadeIn("right", 0.6)}

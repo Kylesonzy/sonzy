@@ -43,14 +43,14 @@ export const testimonialSlider = [
     name: "Jordan Tran",
     position: "Friend",
     message:
-      "Kyle assisted me in filtering packets on my system after it was infiltrated, helping to identify and block suspicious traffic. His expertise ensured that my network was safeguarded.",
+      "Kyle assisted me in filtering packets on my system after it was infiltrated, helping to identify and block suspicious traffic.",
   },
   {
     image: "/emily.png",
     name: "Emily",
     position: "Customer",
     message:
-      "Kyle helped me generate strong, secure passwords to fortify my accounts against potential breaches. His guidance was invaluable in enhancing my overall security posture.",
+      "Kyle helped me generate strong, secure passwords to fortify my accounts against potential breaches.",
   },
 ];
 
@@ -62,16 +62,16 @@ const TestimonialSlider = () => {
         clickable: true,
       }}
       modules={[Navigation, Pagination]}
-      className="h-[400px]"
+      className="h-[450px]"
     >
       {testimonialSlider.map((person, index) => (
         <SwiperSlide key={index}>
-          <div className="flex flex-col items-center md:flex-row gap-x-8 h-full px-16">
+          <div className="flex flex-col items-center md:flex-row gap-x-8 h-full px-8 text-[12px]">
             {/* Avatar, name, position */}
             <div className="w-full max-w-[300px] flex flex-col xl:justify-center items-center relative mx-auto xl:mx-0">
               <div className="flex flex-col justify-center text-center">
                 {/* Avatar */}
-                <div className="mb-2 mx-auto w-[250px] h-[250px] relative">
+                <div className="mb-2 mx-auto w-[230px] h-[230px] relative">
                   <Image
                     src={person.image}
                     alt={person.name}
@@ -91,7 +91,7 @@ const TestimonialSlider = () => {
             {/* Quote & Message */}
             <div className="flex-1 flex flex-col justify-center before:w-[1px] xl:before:bg-white/20 xl:before:absolute xl:before:left-0 xl:before:h-[200px] relative xl:pl-20">
               {/* Quote Icon */}
-              <div className="mb-4">
+              <div className="mb-3">
                 <FaQuoteLeft className="text-4xl xl:text-6xl text-white/20 mx-auto md:mx-0" />
               </div>
               {/* Message */}
