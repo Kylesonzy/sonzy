@@ -75,8 +75,8 @@ const ServiceSlider = () => {
               <div className='text-4xl text-accent mb-4'>{item.icon}</div>
               {/* title & description */}
               <div className='mb-8'>
-                <div className='mb-2 text-lg text-black'>{item.title}</div> {/* Title text is now black */}
-                <p className='max-w-[350px] leading-normal text-black'>{item.description}</p> {/* Description text is now black */}
+                <div className='mb-2 text-lg text-black'>{item.title}</div> 
+                <p className='max-w-[350px] leading-normal text-black'>{item.description}</p> 
               </div>
               {/* arrow */}
               <div className='text-3xl'>
