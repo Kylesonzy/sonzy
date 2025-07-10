@@ -39,7 +39,19 @@ const Home = () => {
   className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 text-lg md:text-xl font-medium text-white'
 >
   a future cyber security analyst &amp; penetration tester
+<div className="mt-6 flex justify-center xl:justify-start"></div>
+<a
+  href="/KyleKimjResume.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-transparent border border-white text-white px-6 py-1 rounded-md font-semibold hover:bg-white hover:text-black transition"
+>
+  View My Resume
+</a>
+
 </motion.p>
+
+
 
 
     
