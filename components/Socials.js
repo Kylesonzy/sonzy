@@ -28,9 +28,6 @@ const Socials = () => {
       <Link href={'https://www.linkedin.com/in/kyle-kim-614961246/'} className='hover:text-accent transition-all duration-300'>
         <SlSocialLinkedin />
       </Link>
-      <Link href={'https://snapchat.com/t/TY3y1xPR'} className='hover:text-accent transition-all duration-300'>
-        <FaSnapchat />
-      </Link>
       <Link href={'https://open.spotify.com/user/gty629rfu9ym8ovhydogg3ue7?si=b1ae817d4b314bb3'} className='hover:text-accent transition-all duration-300'>
         <SlSocialSpotify />
       </Link>

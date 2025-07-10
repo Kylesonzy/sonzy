@@ -81,6 +81,21 @@ export const aboutData = [
     title: 'experience',
     info: [
       {
+        title: 'Information Security Analyst Digital Guardsmen',
+        stage: 'Apr 2025 to Present',
+        icons: [], // Add icons if any, with keys
+      },
+      {
+        title: 'Vulnerability Analyst Netflix',
+        stage: 'May 2025 to July 2025',
+        icons: [], // Add icons if any, with keys
+      },
+      {
+        title: 'Cybersecurity Compliance Intern Lumeria',
+        stage: 'Sep 2024 to Jan 2025',
+        icons: [], // Add icons if any, with keys
+      },
+      {
         title: 'Cybersecurity Analyst PureSugarWax',
         stage: 'Aug 2024 to Dec 2024',
         icons: [], // Add icons if any, with keys
@@ -105,11 +120,6 @@ export const aboutData = [
         stage: '2023',
         icons: [], // Add icons if any, with keys
       },
-      {
-        title: 'Web Developer PureSugarWax',
-        stage: '2022 to 2023',
-        icons: [], // Add icons if any, with keys
-      },
     ],
   },
   {
@@ -126,23 +136,63 @@ export const aboutData = [
         icons: [], 
       },
       {
-        title: 'Google Cybersecurity Professional Certificate',
-        stage: 'Dec 2024',
+        title: 'CompTIA IT Operations Specialist',
+        stage: 'Issued Jun 2025',
+        icons: [], 
+      },  
+      {
+        title: 'CompTIA Network Infrastructure Professional',
+        stage: 'Issued Jun 2025',
+        icons: [], 
+      },
+     {
+        title: 'CompTIA Secure Infrastructure Specialist',
+        stage: 'Issued Jun 2025',
+        icons: [], 
+      },  
+      {
+        title: 'CompTIA Security Analytics Professional',
+        stage: 'Issued Jun 2025',
+        icons: [], 
+      },  
+      {
+        title: 'CompTIA CySA+',
+        stage: 'Issued Jun 2025',
         icons: [], 
       },
       {
-        title: 'AS in Cyber Security',
-        stage: 'Dec 2024',
+        title: 'CompTIA Server+',
+        stage: 'Issued Jun 2025',
+        icons: [], 
+      },
+      {
+        title: 'CompTIA A+',
+        stage: 'Issued May 2025',
+        icons: [], 
+      },
+      {
+        title: 'CompTIA Network+',
+        stage: 'Issued May 2025',
+        icons: [], 
+      },
+      {
+        title: 'CompTIA Security+',
+        stage: 'Issued Apr 2025',
         icons: [],
       },
       {
-        title: 'Network Administration CSC',
-        stage: 'Issued September 2023',
+        title: 'ComTIA Tech+',
+        stage: 'Issued Mar 2025',
         icons: [], 
       },
       {
-        title: 'Business Information Tech CSC',
-        stage: 'Issued October 2023',
+        title: 'CompTIA IT Fundamentals+',
+        stage: 'Issued Jan 2025',
+        icons: [], 
+      },
+      {
+        title: 'Google Cybersecurity Professional Certificate',
+        stage: 'Issued Dec 2024',
         icons: [], 
       },
     ],
@@ -157,7 +207,7 @@ import Circles from '../../components/Circles';
 // framer motion
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';
-
+import Image from 'next/image';
 // counter
 import CountUp from 'react-countup';
 
@@ -179,6 +229,22 @@ const About = () => {
   <div className="container mx-auto px-4 sm:px-6 h-full flex flex-col items-center xl:flex-row gap-6">
     {/* Text Section */}
     <div className="flex-1 flex flex-col justify-center">
+      <motion.div
+  variants={fadeIn("right", 0.15)}
+  initial="hidden"
+  animate="show"
+  exit="hidden"
+  className="mb-6 flex justify-center xl:justify-start"
+>
+  <Image
+    src="/iconkk.jpg"
+    alt="Kyle Kim"
+    width={200}
+    height={200}
+    className="rounded-full object-cover border-4 border-white/20 shadow-lg"
+  />
+</motion.div>
+
       <motion.h2
         variants={fadeIn("right", 0.2)}
         initial="hidden"
@@ -208,7 +274,7 @@ const About = () => {
   exit="hidden"
   className="flex flex-wrap justify-center md:justify-between gap-y-6 md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8"
 >
-  <div className="flex flex-col items-center md:items-start relative flex-1 text-center md:text-left after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+  <div className="flex flex-col items-center md:items-start flex-1 text-center md:text-left">
     <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
       <CountUp start={0} end={3} duration={5} /> +
     </div>
@@ -216,7 +282,7 @@ const About = () => {
       Years of Experience
     </div>
   </div>
-  <div className="flex flex-col items-center md:items-start relative flex-1 text-center md:text-left after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+  <div className="flex flex-col items-center md:items-start flex-1 text-center md:text-left">
     <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
       <CountUp start={0} end={999} duration={5} /> +
     </div>
@@ -224,7 +290,7 @@ const About = () => {
       Packets Captured
     </div>
   </div>
-  <div className="flex flex-col items-center md:items-start relative flex-1 text-center md:text-left after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+  <div className="flex flex-col items-center md:items-start flex-1 text-center md:text-left">
     <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
       <CountUp start={0} end={35} duration={5} /> +
     </div>
@@ -232,7 +298,7 @@ const About = () => {
       Pwned Machines
     </div>
   </div>
-  <div className="flex flex-col items-center md:items-start relative flex-1 text-center md:text-left">
+  <div className="flex flex-col items-center md:items-start flex-1 text-center md:text-left">
     <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
       <CountUp start={0} end={3} duration={5} /> +
     </div>
@@ -241,6 +307,7 @@ const About = () => {
     </div>
   </div>
 </motion.div>
+
 
 
     </div>
@@ -271,7 +338,12 @@ const About = () => {
   </div>
 
   {/* Content */}
-  <div className="py-2 xl:py-6 flex flex-wrap gap-y-4 gap-x-4 items-center xl:items-start justify-center xl:justify-start text-center sm:text-left">
+  <div className={`py-2 xl:py-6 ${
+  index === 3
+    ? 'flex flex-col gap-y-3 items-start text-left'
+    : 'flex flex-wrap gap-y-4 gap-x-4 items-center xl:items-start justify-center xl:justify-start text-center sm:text-left'
+}`}>
+
     {aboutData[index].info.map((item, itemIndex) => (
       <div
         key={itemIndex}
@@ -297,6 +369,7 @@ const About = () => {
 
   </div>
 </div>
+
 
   );
 };
