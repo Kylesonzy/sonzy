@@ -52,6 +52,12 @@ export const testimonialSlider = [
     message:
       "Kyle helped me generate strong, secure passwords to help against breaches.",
   },
+  { image: "/DrD.jpg",
+    name: "Dr D",
+    position: "Teacher",
+    message: "Kyle has been a great help in my cybersecurity class, providing insights and practical solutions to complex problems.",
+  }
+
 ];
 
 const TestimonialSlider = () => {
