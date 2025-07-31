@@ -25,7 +25,7 @@ const Home = () => {
             exit='hidden'
             className='h1'
           >
-            Hello, <br /> Im
+            Hello, <br /> I'm
 <span className="typewriter1"> Kyle Kim</span>
 
             
