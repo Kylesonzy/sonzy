@@ -70,7 +70,7 @@ var templateParams = {
             exit='hidden'
             className='h2 text-center mb-12'
           >
-            Let's <span className='text-accent'>connect.</span>
+            Lets <span className='text-accent'>connect.</span>
           </motion.h2>
           
           {/* Form */}
