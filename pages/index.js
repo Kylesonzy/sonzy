@@ -41,7 +41,7 @@ const Home = () => {
   a future cyber security analyst &amp; penetration tester
 <div className="mt-6 flex justify-center xl:justify-start"></div>
 <a
-  href="KyleKimJResume.pdf"
+  href="KyleKimJResumeREV2.pdf"
   target="_blank"
   rel="noopener noreferrer"
   className="bg-transparent border border-white text-white px-6 py-1 rounded-md font-semibold hover:bg-white hover:text-black transition"
