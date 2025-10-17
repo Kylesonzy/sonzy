@@ -13,78 +13,82 @@ import { fadeIn } from '../variants';
 
 const Home = () => {
   return (
-    <div className='bg-primary/60 h-full'>
-      {/* text */}
-      <div className='w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10'>
-        <div className='text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto'>
+    <div className="bg-primary/60 h-full relative overflow-hidden">
+      {/* background gradient */}
+      <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10 relative z-20">
+        <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
           {/* title */}
           <motion.h1
             variants={fadeIn('down', 0.2)}
-            initial='hidden'
-            animate='show'
-            exit='hidden'
-            className='h1'
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="h1 text-white leading-snug mb-6"
           >
-            Hello, <br /> Im
-<span className="typewriter1"> Kyle Kim</span>
-
-            
+            Hello, <br /> I'm
+            <span className="typewriter1"> Kyle Kim</span>
           </motion.h1>
+
           {/* subtitle */}
           <motion.p
-  variants={fadeIn('down', 0.3)}
-  initial='hidden'
-  animate='show'
-  exit='hidden'
-  className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 text-lg md:text-xl font-medium text-white'
->
-  a future cyber security analyst &amp; penetration tester
-<div className="mt-6 flex justify-center xl:justify-start"></div>
-<a
-  href="KyleKimJResumeREV2.pdf"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="bg-transparent border border-white text-white px-6 py-1 rounded-md font-semibold hover:bg-white hover:text-black transition"
->
-  View My Resume
-</a>
+            variants={fadeIn('down', 0.3)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 text-lg md:text-xl font-medium text-white leading-relaxed mb-8"
+          >
+            a future cyber security analyst &amp; penetration tester
+          </motion.p>
 
-</motion.p>
+          {/* resume button */}
+          <motion.div
+            variants={fadeIn('down', 0.4)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="flex justify-center xl:justify-start z-30 mb-12"
+          >
+            <a
+              href="/KyleKimJResumeREV2.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-transparent border border-white text-white text-lg md:text-xl px-8 py-1 rounded-md font-semibold hover:bg-white hover:text-black transition-all duration-300 z-50"
+            >
+              View My Resume
+            </a>
+          </motion.div>
 
-
-
-
-    
-          <div className='flex justify-center xl:hidden relative'>
+          {/* projects button */}
+          <div className="flex justify-center xl:hidden relative z-30 mt-4">
             <ProjectsBtn />
           </div>
           <motion.div
-            variants={fadeIn('down', 0.4)}
-            initial='hidden'
-            animate='show'
-            exit='hidden'
-            className='hidden xl:flex'
+            variants={fadeIn('down', 0.5)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="hidden xl:flex z-30 mt-4"
           >
             <ProjectsBtn />
           </motion.div>
         </div>
       </div>
+
+      {/* avatar (behind buttons) */}
       <motion.div
-        variants={fadeIn('up',0.5)}
-        initial='hidden'
-        animate='show'
-        exit='hidden'
-        transition={{duration: 1, ease: 'easeInOut'}}
-        className='w-full h-full max-w-[1000px] max-h-[1000px] absolute -bottom-20 lg:bottom-20 lg:right-[8%]'
-        
-        >
-          <Avatar />
+        variants={fadeIn('up', 0.6)}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+        transition={{ duration: 1, ease: 'easeInOut' }}
+        className="w-full h-full max-w-[1000px] max-h-[1000px] absolute -bottom-20 lg:bottom-20 lg:right-[8%] z-10"
+      >
+        <Avatar />
       </motion.div>
 
-      {/* image */}
-      <div className='w-[1920px] h-full absolute right-0 bottom-0'>
-        {/* particles */}
-        <ParticlesContainer />
+      {/* particles background (lowest layer) */}
+      <div className="w-[1920px] h-full absolute right-0 bottom-0 z-0">
+        <ParticlesContainer /> 
       </div>
     </div>
   );

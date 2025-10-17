@@ -22,7 +22,7 @@ export const testimonialSlider = [
     name: "Hamad",
     position: "Friend",
     message:
-      "my homie kyle helped me with my firewall and internet config",
+      "my homie kyle helped me with my firewall and internet",
   },
   {
     image: "/phong.jpg",
