@@ -25,20 +25,21 @@ const Home = () => {
             exit="hidden"
             className="h1 text-white leading-snug mb-6"
           >
-            Hello, <br /> I'm
+            Hello, <br /> Im
             <span className="typewriter1"> Kyle Kim</span>
           </motion.h1>
-
+          
           {/* subtitle */}
           <motion.p
-            variants={fadeIn('down', 0.3)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 text-lg md:text-xl font-medium text-white leading-relaxed mb-8"
+          variants={fadeIn('down', 0.3)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 text-lg md:text-xl font-medium text-white leading-relaxed mb-8"
           >
-            a future cyber security analyst &amp; penetration tester
+          {"a future cyber security analyst &#38; penetration tester"}
           </motion.p>
+
 
           {/* resume button */}
           <motion.div
@@ -88,7 +89,7 @@ const Home = () => {
 
       {/* particles background (lowest layer) */}
       <div className="w-[1920px] h-full absolute right-0 bottom-0 z-0">
-        <ParticlesContainer /> 
+        <ParticlesContainer />
       </div>
     </div>
   );
