@@ -37,7 +37,7 @@ const Home = () => {
           exit="hidden"
           className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 text-lg md:text-xl font-medium text-white leading-relaxed mb-8"
           >
-          {"a future cyber security analyst &#38; penetration tester"}
+          {"a future cyber security analyst & penetration tester"}
           </motion.p>
 
 
